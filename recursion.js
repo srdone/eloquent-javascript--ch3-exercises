@@ -11,4 +11,21 @@ function isEven(x) {
 
   // Check to see if the value is zero or one and returns corresponing response
   // Otherwise performs a recursion after subtracting two.
+  if (num === 0) {
+    return true;
+  } else if (num === 1) {
+    return false;
+  } else {
+    num = num - 2;
+    return isEven(num);
+  }
 }
+
+console.log('Test 1 is even?');
+console.log(isEven(1));
+
+console.log('Test 50 is even?');
+console.log(isEven(50));
+
+console.log('Test 75 is even?');
+console.log(isEven(75));
