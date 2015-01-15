@@ -15,3 +15,9 @@ function countChar(string, chr) {
 }
 
 console.log(countChar('Alpha A', 'A'));
+
+var countBs = function(string) {
+  return countChar(string, 'B');
+};
+
+console.log(countBs('Beta B'));
